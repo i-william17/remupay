@@ -71,7 +71,6 @@ const Hero = () => {
           </svg>
         </motion.div>
       </div>
-
       {/* Animated gradient blobs */}
       <div className="absolute inset-0 overflow-hidden opacity-5">
         <motion.div 
@@ -100,7 +99,6 @@ const Hero = () => {
           }}
         />
       </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
@@ -181,9 +179,11 @@ const Hero = () => {
                 <Link
                   href="/register"
                   className="flex items-center justify-center px-8 py-4 rounded-xl bg-gradient-to-r from-[#8C5EFF] to-[#F95738] text-white font-medium shadow-lg hover:shadow-xl transition-all group"
-                >
+                  >
+                  <>
                   Start 30-Day Free Trial
                   <FiArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
+                  </>
                 </Link>
               </motion.div>
               

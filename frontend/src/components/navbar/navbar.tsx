@@ -67,7 +67,10 @@ const RemunaryNavbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo - Visible on all screens */}
-            <Link href="/" className="flex items-center space-x-2 group flex-shrink-0">
+            <Link
+              href="/"
+              className="flex items-center space-x-2 group flex-shrink-0"
+              >
             <Image
               src="/1-nobg.png"
               alt="Logo"
@@ -87,7 +90,7 @@ const RemunaryNavbar = () => {
                         ? 'bg-[#F4F0ED] text-[#3E0D4C]'
                         : 'text-gray-600 hover:bg-gray-50/80 hover:text-[#3E0D4C]'
                       }`}
-                  >
+                    >
                     <span className="mr-2 text-[#8C5EFF]">{item.icon}</span>
                     {item.name}
                     {item.subItems && <FiChevronDown className="ml-1 w-4 h-4 text-gray-400 group-hover:text-[#8C5EFF]" />}
@@ -105,7 +108,7 @@ const RemunaryNavbar = () => {
                                 ? 'bg-[#F4F0ED] text-[#3E0D4C]'
                                 : 'text-gray-700 hover:bg-gray-50'
                               }`}
-                          >
+                            >
                             {subItem.name}
                           </Link>
                         ))}
@@ -121,15 +124,19 @@ const RemunaryNavbar = () => {
               <Link
                 href="/login"
                 className="flex items-center px-3 py-2 text-sm font-medium text-gray-600 hover:text-[#3E0D4C] transition-colors"
-              >
-                <FaUserCircle className="mr-2 w-4 h-4" />
-                Sign in
+                >
+                  <>
+                    <FaUserCircle className="mr-2 w-4 h-4" />
+                    Sign in
+                  </>
               </Link>
               <Link
                 href="/register"
                 className="flex items-center px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#8C5EFF] to-[#F95738] text-white text-sm font-medium shadow-lg hover:shadow-xl transition-all hover:from-[#7D4AFF] hover:to-[#E84C2F] group"
-              >
+                >
+                <>
                 Get Started <FiArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
+                </>
               </Link>
             </div>
 
@@ -146,7 +153,6 @@ const RemunaryNavbar = () => {
           </div>
         </div>
       </nav>
-
       {/* Mobile Menu - Full screen overlay */}
       <div
         className={`lg:hidden fixed inset-0 bg-white z-40 transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'
@@ -187,7 +193,7 @@ const RemunaryNavbar = () => {
                             ? 'bg-[#F4F0ED] text-[#3E0D4C]'
                             : 'text-gray-600 hover:bg-gray-50'
                           }`}
-                      >
+                        >
                         {subItem.name}
                       </Link>
                     ))}
@@ -201,15 +207,19 @@ const RemunaryNavbar = () => {
             <Link
               href="/login"
               className="flex items-center justify-center px-6 py-3 rounded-xl text-base font-medium text-gray-700 hover:bg-gray-50 transition-colors"
-            >
-              <FaUserCircle className="mr-2 w-5 h-5" />
-              Sign in
+              >
+                <>
+                  <FaUserCircle className="mr-2 w-5 h-5" />
+                  Sign in
+                </>
             </Link>
             <Link
               href="/register"
               className="flex items-center justify-center px-6 py-3 rounded-xl text-base font-medium text-white bg-gradient-to-r from-[#8C5EFF] to-[#F95738] shadow-md hover:from-[#7D4AFF] hover:to-[#E84C2F] transition-all"
-            >
+              >
+              <>
               Get Started <FiArrowRight className="ml-2" />
+              </>
             </Link>
           </div>
         </div>

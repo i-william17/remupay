@@ -141,7 +141,7 @@ const SignIn: React.FC = () => {
           src="/one.jpg"
           alt="Business Analytics"
           fill
-          className="object-cover w-full h-full bg-center bg-no-repeat"
+          className="object-cover w-full h-full bg-center bg-no-repeat brightness-50"
           priority
         />
         <motion.div 
@@ -219,6 +219,13 @@ const SignIn: React.FC = () => {
             transition={{ delay: 0.3, duration: 0.5 }}
             className="text-center mb-8"
           >
+          <Image
+            src="/1-nobg.png"
+            alt="Create Your Account"
+            width={150}
+            height={150}
+            className="mx-auto mb-4"
+          />
             <h2 className="text-2xl font-bold text-gray-900 mb-2">Create Your Account</h2>
             <p className="text-gray-600 text-sm">
               Join thousands of businesses using Remunary for smarter analytics
@@ -443,8 +450,8 @@ const SignIn: React.FC = () => {
               className="text-center text-sm text-gray-600"
             >
               Already have an account?{' '}
-              <a href="#" className="font-medium text-[#8C5EFF] hover:underline">
-                Sign in
+              <a href="/login" className="font-medium text-[#8C5EFF] hover:underline">
+                Login
               </a>
             </motion.div>
           </form>

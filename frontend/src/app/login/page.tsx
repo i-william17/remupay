@@ -260,8 +260,8 @@ const LoginComponent = () => {
             className="mt-6 text-center text-sm text-gray-600"
           >
             Don't have an account?{' '}
-            <a href="#" className="font-medium text-blue-600 hover:underline">
-              Sign up
+            <a href="/signin" className="font-medium text-blue-600 hover:underline">
+              Create account
             </a>
           </motion.div>
         </motion.div>
@@ -273,7 +273,7 @@ const LoginComponent = () => {
           src="/three.jpg" 
           alt="Login Background"
           fill
-          className="object-cover"
+          className="object-cover brightness-70"
           priority
         />
         <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
